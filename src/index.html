@@ -5,65 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
+      <div class="bg-wrapper">
+        <div class="container">
+
+            <div class="nav-bar">
+              <a href="#" class="page-header__logo-link">
+                <img src="images/logo/dia-logo.svg" alt="Company logo">
+              </a>
+              <ul class="page-header__menu main-menu">
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--white">Home</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--white">About us</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--white">Services</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--white">Work</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--white">Contact us</a></li>
+                <li class="main-menu__item main-menu__item--accent"><a href="#" class="main-menu__link main-menu__link--white">Hire us</a></li>
+              </ul>
+            </div>
+
+          <div class="site-title">
+            <h1 class="page-header__title">Global digital agency</h1>
+            <p class="page-header__subtitle">By the same illusion which lifts the horizon of the sea to the level of the
+              spectator on a hillside, the sable cloud beneath.</p>
+            <a href="#" class="page-header__button button button--white">Learn more</a></div>
+          </div>
+        </div>
+    </header>
+
+    <div class="page-header__slider slider">
       <div class="container">
-        <div class="bg-wrapper">
-
-          <div class="nav-bar">
-            <a href="#" class="page-header__logo-link">
-              <img src="images/logo/dia-logo.svg" alt="Company logo">
-            </a>
-            <ul class="page-header__menu main-menu">
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Home</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">About us</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Services</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Work</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Contact us</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Hire us</a></li>
-            </ul>
-          </div>
-
-          <h1 class="page-header__title">Global digital agency</h1>
-          <p class="page-header__subtitle">By the same illusion which lifts the horizon of the sea to the level of the
-            spectator on a hillside, the sable cloud beneath.</p>
-          <a href="#" class="page-header__button button">Learn more</a>
-        </div>
-
-        <div class="page-header__slider slider">
-          <img class="slider__item" src="images/slider/slide-img-1.jpg" alt="">
-          <div class="slider__toggles">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-          </div>
+        <div class="slider__item">
+          <img class="slider__image" src="images/slider/slide-img-1.jpg" alt="">
           <div class="intro">
-            <p class="intro__title">
-              Intro
-            </p>
-            <p class="intro__text">
-              By the same illusion which lifts the horizon.
-            </p>
+            <p class="intro__title">Intro</p>
+            <p class="intro__text">By the same illusion which<br />lifts the horizon.</p>
           </div>
         </div>
-
-        <nav class="smedia-links">
-          <ul class="smedia-links__list">
-            <li class="smedia-links__item"><a href="#">Facebook</a></li>
-            <li class="smedia-links__item"><a href="#">Twitter</a></li>
-            <li class="smedia-links__item"><a href="#">Instagram</a></li>
-          </ul>
-        </nav>
-
-        <div class="welcome">
-          <p class="welcome__section-name section-name">Welcome</p>
-          <p class="welcome__text">
-            By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.
-          </p>
+        <div class="slider__toggles">
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
         </div>
       </div>
-    </header>
+    </div>
+
+    <nav class="smedia-links">
+      <ul class="smedia-links__list">
+        <li class="smedia-links__item"><a href="#">Facebook</a></li>
+        <li class="smedia-links__item"><a href="#">Twitter</a></li>
+        <li class="smedia-links__item"><a href="#">Instagram</a></li>
+      </ul>
+    </nav>
+
+    <div class="welcome">
+      <p class="welcome__section-name section-name">Welcome</p>
+      <p class="welcome__text">
+        By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.
+      </p>
+    </div>
 
     <section class="services">
       <h2 class="services__title">What we do</h2>
@@ -160,15 +162,96 @@
       <div class="container">
         <p class="testimonials__section-name section-name">Testimonials</p>
         <h3 class="testimonials__title section-title">By the same illusion which lifts the horizon.</h3>
+
         <div class="testimonials__cards">
           <div class="testimonials__card testimonials__card--1">
             <img src="images/testimonials/testimonial-ava-1.jpg" alt="John Wayne photo">
-
+            <p class="testimonials__text">“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”</p>
+            <p class="testimonials__author">John Wayne</p>
+            <p class="testimonials__position">CEO</p>
           </div>
+
+          <div class="testimonials__card testimonials__card--2">
+            <img src="images/testimonials/testimonial-ava-2.jpg" alt="John Wayne photo">
+            <p class="testimonials__text">“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”</p>
+            <p class="testimonials__author">John Wayne</p>
+            <p class="testimonials__position">CEO</p>
+          </div>
+
+          <div class="testimonials__card testimonials__card--3">
+            <img src="images/testimonials/testimonial-ava-3.jpg" alt="John Wayne photo">
+            <p class="testimonials__text">“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”</p>
+            <p class="testimonials__author">John Wayne</p>
+            <p class="testimonials__position">CEO</p>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <section class="slogan">
+      <div class="container">
+        <h2 class="slogan__title">Vision, Passion, Results</h2>
+        <p class="slogan__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on
+          a hillside, the sable cloud beneath.</p>
+        <button class="slogan__button button">Apply</button>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <p class="contacts-form__section-name section-name">Send us a message</p>
+        <form action="#" class="contacts__form" method="POST">
+
+          <label class="email-label" for="mail">Your email</label>
+          <input class="email-input" id="mail" type="email">
+
+          <label class="fname-label" for="fname">Your name</label>
+          <input class="fname-input" id="fname" type="text">
+
+          <label class="message-label" for="message">Your message</label>
+          <input class="message-textarea" id="message">
+
+          <button type="submit" class="contacts__button button">send</button>
+        </form>
+
+        <div class="contacts__info">
+          <p class="contacts-info__section-name section-name">Contact us</p>
+          <h3 class="contacts-info__title section-title">By the same illusion which lifts the horizon.</h3>
+        </div>
+
+        <p class="contacts-info__block-name">Call us</p>
+        <a class="block-text phone" type="tel" href="tel:654 321 987">654 321 987</a>
+
+        <p class="contacts-info__block-name">Call us</p>
+        <a class="block-text phone" href="tel:654 321 987">654 321 987</a>
+
+        <p class="contacts-info__block-name">Visit us</p>
+        <a class="block-text address"
+           href="https://www.google.com.ua/maps/search/2905+West+Drive/@42.1701044,-88.1764391,12z/data=!3m1!4b1?hl=us">
+          2905 West Drive,<br/>
+          Buffalo Grove</a>
+
+        <ul class="socials-list">
+          <li class="socials-item"><a href="#" class="socials-link"><span class="fab fa-facebook-square"></span></a></li>
+          <li class="socials-item"><a href="#" class="socials-link"><span class="fab fa-twitter"></span></a></li>
+          <li class="socials-item"><a href="#" class="socials-link"><span class="fab fa-instagram"></span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="container">
+        <p class="page-footer__fineprint">Design by &#64;mariuszdaniel</p>
+        <ul class="page-footer__menu main-menu">
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Home</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">About us</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Services</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Work</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Contact us</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>

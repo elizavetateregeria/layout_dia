@@ -2,6 +2,10 @@
 @import "fonts";
 @import "typography";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #fff;
   font-family: "Muli", sans-serif;
@@ -9,6 +13,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -22,7 +27,7 @@ p {
 .container {
   margin: 0 auto;
   max-width: 1146px;
-  width: 71%;
+  width: 80%;
 }
 
 .container-flex {
@@ -35,13 +40,150 @@ p {
   }
 }
 
-.services__title {
+.button {
+  display: inline-block;
+  padding: 1em 4em;
+
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  text-decoration: none;
+  border-radius: 2em;
+}
+
+.button--white {
+  background-color: #fff;
+  color: $title-blue;
+}
+
+.bg-wrapper {
+  background: linear-gradient(115deg, rgba(86,204,242,1) 75%, rgba(255,255,255,1) 25%);
+  background-size: cover;
+}
+
+.nav-bar {
+  width: 83%;
+  padding: 1.5em 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-header__menu {
+  margin-left: 9em;
+}
+
+.main-menu {
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+
+  font-size: 1rem;
+  font-weight: 900;
+
+  &__item {
+    margin-right: 3.75em;
+  }
+
+  &__item--accent {
+    margin-right: 0;
+    margin-left: 4em;
+    margin-top: 0.75em;          /*          !!!!! */
+  }
+
+  &__item--accent::after {
+    content: "";
+    display: block;
+    background-color: $accent-color;
+    width: 120%;
+    height: 4px;
+    margin-top: 8px;
+    margin-left: -4px;
+    border-radius: 2px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link--white {
+    color: #fff;
+  }
+}
+
+.site-title {
+  width: 70%;
+  margin-left: 7em;
+  margin-top: 1em;
+}
+
+.page-header__title {
+  margin-bottom: 0.75em;
+
+  color: #fff;
+  font-size: 4rem;
+}
+
+.page-header__subtitle {
+  margin-bottom: 1.5em;
+
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.page-header__button {
+  margin-bottom: 25em;
+}
+
+.slider {
+  position: relative;
+  top: -320px;
+}
+
+.slider__item {
+  position: relative;
+}
+
+.intro {
+  position: absolute;
+  top: 75%;
+  left: 8%;
+  &__title {
+    line-height: 1.5;
+    color: $c-lightblue;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &__text {
+    line-height: 1.4;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 900;
+
+  }
+}
+
+.services__title,
+.slogan__title {
   margin-bottom: 136px;
 
   font-size: 3rem;
   color: $title-blue;
 
   text-align: center;
+}
+
+.slider__image {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
 }
 
 .card {
